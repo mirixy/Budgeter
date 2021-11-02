@@ -15,13 +15,14 @@ public class Money {
     public int get_bank() {
         return bank;
     }
-    // set the value of the variable wage, but currently this is not included in the calculations
+    // set the value of the variable wage
     public void set_wage() {
         System.out.print("Please provide your wage: ");
         wage = sc.nextInt();
     }
-    // get the wage , but it is also not used for now.
+    // get the wage
     public int get_Wage() {
         return wage;
     }
+
 }

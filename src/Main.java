@@ -12,6 +12,11 @@ public class Main {
         // Output
         System.out.println("Costs: " + ac.get_total() + " Income: " + (mn.get_bank() + mn.get_Wage()));
         System.out.println("Total Money after deduction: " +(mn.get_bank() - ac.get_total() + mn.get_Wage()) );
+        // Show a sentence if the costs are higher than the value of the bank
+        int sum = mn.get_bank() + mn.get_Wage() - ac.get_total();
+        if(sum < 0) {
+            System.out.println("Be careful you are in depth!");
+        }
     }
 
 }
