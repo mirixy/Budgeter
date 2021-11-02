@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Accounts {
-
+    // All Variables, set to private
     private int Netflix;
     private int AdobeCC;
     private int Rent;
@@ -16,9 +16,11 @@ public class Accounts {
     private int Microsoft_Office;
     private int total;
 
+    /* Set all Values for the variables and calculate the total value */
     public void set_Account() {
         Scanner sc = new Scanner(System.in);
         boolean select = true;
+        // Loop through the Switch Cases as long select is true
         while(select){
             System.out.println();
             System.out.println("Services: Netflix, AdobeCC, Rent, Spotify, Gas, Electricity, Car_Insurance, Gasoline, insurances, Lingq, Amazon, Microsoft, Office");
@@ -90,7 +92,7 @@ public class Accounts {
         }
 
     }
-
+    // Get the total costs of all selected Services
     public int get_total() {
         return total;
     }
