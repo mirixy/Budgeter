@@ -10,8 +10,8 @@ public class Main {
         // Select all Accounts that needs to be calculated
         ac.set_Account();
         // Output
-        System.out.println("Costs: " + ac.get_total() + " Income: " +mn.get_bank());
-        System.out.println("Total Money after deduction: " +(mn.get_bank() - ac.get_total()) );
+        System.out.println("Costs: " + ac.get_total() + " Income: " + (mn.get_bank() + mn.get_Wage()));
+        System.out.println("Total Money after deduction: " +(mn.get_bank() - ac.get_total() + mn.get_Wage()) );
     }
 
 }
