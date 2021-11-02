@@ -20,6 +20,8 @@ public class Accounts {
         Scanner sc = new Scanner(System.in);
         boolean select = true;
         while(select){
+            System.out.println();
+            System.out.println("Services: Netflix, AdobeCC, Rent, Spotify, Gas, Electricity, Car_insurance, Gasoline, insurances, Lingq, Amazon, Microsoft, Office");
             System.out.print("Please enter a Service or exit: ");
             String name = sc.nextLine();
             switch(name){
@@ -67,10 +69,15 @@ public class Accounts {
                     Amazon = 8;
                     System.out.println("Added Amazon!");
                     break;
-                case "Microsoft_Office":
+                case "Microsoft":
+                case "Office":
+                case "Microsoft Office":
                     Microsoft_Office = 10;
                     System.out.println("Added Office!");
                     break;
+                case "calculate":
+                    total = Netflix + AdobeCC + Rent + Spotify + Gas + Electricity + Car_insurance + Gasoline + insurances + Lingq + Amazon + Microsoft_Office;
+                    System.out.println("So far your total is: " + total );
                 case "exit":
                     select = false;
                     break;
