@@ -21,7 +21,7 @@ public class Accounts {
         boolean select = true;
         while(select){
             System.out.println();
-            System.out.println("Services: Netflix, AdobeCC, Rent, Spotify, Gas, Electricity, Car_insurance, Gasoline, insurances, Lingq, Amazon, Microsoft, Office");
+            System.out.println("Services: Netflix, AdobeCC, Rent, Spotify, Gas, Electricity, Car_Insurance, Gasoline, insurances, Lingq, Amazon, Microsoft, Office");
             System.out.print("Please enter a Service or exit: ");
             String name = sc.nextLine();
             switch(name){
